@@ -3,7 +3,7 @@ using namespace std;
 
 void merg_sort(int l,int r,vector<int> *arr_a,vector<int> *arr_b)
 {
-    if(l==r) return;
+    if(l==r) return; //拆分到只有一个元素时返回，一个元素的集不会进行归并操作
 
     /*二等分割数组*/
     int mid=(l+r)/2;
