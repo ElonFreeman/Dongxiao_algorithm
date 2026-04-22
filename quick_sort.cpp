@@ -9,9 +9,21 @@ void quick_sort(int l,int r,vector<int> *arr)
 
     while(i<j)
     {
-        do {i++;} while((*arr)[i]<mid);
-        do {j--;} while((*arr)[j]>mid);
-        if(i<j) swap((*arr)[i],(*arr)[j]);
+        do
+        {
+            i++;
+
+        } while((*arr)[i]<mid);
+        do
+        {
+            j--;
+
+        } while((*arr)[j]>mid);
+
+        if(i<j) 
+        {
+            swap((*arr)[i],(*arr)[j]);
+        }
     }
 
     quick_sort(l,j,arr);
